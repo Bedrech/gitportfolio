@@ -1,0 +1,414 @@
+* {
+    margin:0;
+    padding:0;
+}
+
+body {
+    background: rgb(48,0,0);
+    background: linear-gradient(120deg, rgba(48,0,0,1) 30%, rgba(85,1,1,1) 40%, rgba(85,1,1,1) 50%, rgba(48,0,0,1) 60%);
+}
+
+html {
+    scroll-behavior: smooth;
+}
+/* div entière */
+.parent {
+    height:100%;
+    color:white;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+/* navbar */
+.navbar {
+    background: rgba(255, 255, 255, 0.28);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(9.8px);
+    -webkit-backdrop-filter: blur(9.8px);
+    padding-bottom:10px;
+    padding-top:10px;
+    position:fixed;
+    margin-left:50%;
+    transform: translateX(-50%);
+    padding-left:20px;
+    padding-right:20px;
+    border-bottom-left-radius:20px;
+    border-bottom-right-radius:20px;
+    z-index:1;
+}
+
+.navbar a {
+    color:white;
+    text-decoration:none;
+    font-size:200%;
+    padding-left:10px;
+    padding-right:10px;
+}
+
+.navbar a:hover {
+    text-decoration:underline;
+}
+
+/* accueil */
+.accueil{
+    height: 100vh;
+    text-shadow: 17px 6px 20px #ff0000;
+    padding-top:200px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+/* premier titre */
+.accueil h1{
+    font-size:300%;
+    padding-left:10%;
+    animation-name:hun;
+    animation-duration:2s;
+    animation-fill-mode: forwards;
+}
+
+/* animation du premier titre */
+@keyframes hun {
+    from{
+        opacity:0;
+        padding-left:0px;
+    } to {
+        opacity:1;
+        padding-left:10%;
+    }
+}
+
+/* deuxieme titre */
+.accueil h2{
+    font-size:300%;
+    padding-left:15%;
+    animation-name:hdeux;
+    animation-duration:2s;
+    animation-fill-mode:forwards;
+}
+
+/* animation du deuxieme titre */
+@keyframes hdeux {
+    from{
+        opacity:0;
+        padding-left:0px;
+    } to {
+        opacity:1;
+        padding-left:15%;
+    }
+}
+
+/* troisieme titre */
+.accueil h3{
+    font-size:300%;
+    padding-left:20%;
+    animation-name:htrois;
+    animation-duration:2s;
+    animation-fill-mode:forwards;
+}
+
+/* animation du troisieme titre */
+@keyframes htrois {
+    from{
+        opacity:0;
+        padding-left:0px;
+    } to {
+        opacity:1;
+        padding-left:20%;
+    }
+}
+
+/* quatrieme titre */
+.accueil h4{
+    font-size:300%;
+    padding-left:25%;
+    animation-name:hquatre;
+    animation-duration:2s;
+    animation-fill-mode:forwards;
+}
+
+/* animation du quatrieme titre */
+@keyframes hquatre {
+    from{
+        opacity:0;
+        padding-left:0px;
+    } to {
+        opacity:1;
+        padding-left:25%;
+    }
+}
+
+/* projet */
+.projet{
+    text-align:center;
+    height: 100vh;
+    padding-top:100px;
+}
+
+.projet a {
+    font-size:100%;
+    color:white;
+}
+
+.projet h2 {
+    font-size:200%;
+}
+
+/* contact */
+.contact{
+    height: 80vh;
+    margin-top:100px;
+}
+
+.contact h1 {
+    text-align:center;
+}
+
+.contact form {
+    margin-left:35%;
+    margin-right:35%;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.contact textarea{
+    resize:vertical;
+}
+
+.contact button{
+    margin-top:25px;
+    margin-left:25%;
+    margin-right:25%;
+    padding:10px;
+    border-radius:10px;
+    border:none;
+    font-size:120%;
+}
+
+.contact button:hover {
+    background-color:rgb(165, 165, 165);
+    cursor:pointer;
+}
+
+.contact label {
+    padding-top:20px;
+    padding-bottom:5px;
+    font-size:120%;
+}
+
+.contact input {
+    padding-top:5px;
+    padding-bottom:5px;
+}
+
+.contactezmoi {
+    display:flex;
+    flex-direction: column;
+}
+
+/* le carousel */
+.carousel {
+    position:relative;
+    height: 600px;
+    width: 60%;
+    margin:0 auto;
+    margin-top:40px;
+}
+
+/* les fleches de navigations du carousel */
+.carousel_arrows {
+    width: 40px;
+    height: 40px;
+    margin-bottom:250px;
+}
+
+/* tout les projets dans le carousel */
+.carousel_slide {
+    list-style: none;
+    position:absolute;
+    top:0;
+    bottom:0;
+    width: 100%;
+}
+
+/* la div de toute les slides du carousel */
+.carousel_track-container {
+    background-color:lightgreen;
+    position:relative;
+    width: 100%;
+}
+
+/* le ul de qui contient toute les slides du carousel */
+.carousel_track {
+    padding:0;
+    margin:0;
+    list-style:none;
+    position:relative;
+    height: 100%;
+    transition:transform 250ms ease-in;
+}
+
+/* le bouton des fleches de navigation du carousel */
+.carousel_button {
+    position:absolute;
+    top:50%;
+    transform: translateY(-50%);
+    border:none;
+    background-color:transparent;
+    cursor:pointer;
+}
+
+/* fleche gauche */
+#leftarrow {
+    left:0;
+}
+
+/* fleche droite */
+#rightarrow {
+    right:0;
+}
+
+/* les slides du carousel qui ne sont pas affichés */
+.carousel_slide{
+    display:none;
+}
+
+/* la slide du carousel affiché */
+.current_slide{
+    display:block;
+}
+
+/* la div des slides du carousel */
+.allprojects{
+    height: 100px;
+}
+
+/* les images des slides du carousel */
+.allprojects img {
+    height: 500px;
+    max-width: 700px;
+    max-height: 700px;
+    filter: grayscale(100%);
+    -webkit-filter: grayscale(100%);
+    -moz-filter: grayscale(100%);
+    transition-duration: 0.2s;
+}
+
+.allprojects img:hover {
+    filter: grayscale(0%);
+    -webkit-filter: grayscale(0%);
+    -moz-filter: grayscale(0%);
+}
+
+/* le blanc derrière la souris */
+#mousetest {
+    top:100px;
+    left:100px;
+    position:absolute;
+    -webkit-box-shadow: 0px 10px 13px -7px white, 0px 0px 50px 50px white; 
+    box-shadow: 0px 10px 13px -7px white, 0px 0px 50px 30px white;
+}
+
+/* parcours */
+.parcours {
+    height: 100vh;
+    padding-top:100px;
+    text-align:center;
+
+}
+
+.parcours a {
+    color:white;
+}
+
+.parcours a:hover {
+    color:rgb(138, 132, 132);
+}
+
+.insideparcoursleft {
+    text-align:left;
+    margin-left:10%;
+    font-size:130%;
+    margin-top:50px;
+    display:flex;
+    flex-direction:row;
+}
+
+.left{
+    width: 40%;
+    padding:20px;
+    background: rgba(255, 255, 255, 0.25);
+    border-radius: 30px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    border: 1px solid rgba(255, 255, 255, 1);
+}
+
+.right{
+    margin-left:10%;
+    margin-top:50px;
+    font-size:150%;
+}
+
+.insideparcoursright {
+    text-align:right;
+    margin-right:10%;
+    font-size:130%;
+    margin-top:50px;
+    display:flex;
+    flex-direction:row-reverse;
+}
+
+.first {
+    width: 40%;
+    padding:20px;
+    background: rgba(255, 255, 255, 0.25);
+    border-radius: 30px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    border: 1px solid rgba(255, 255, 255, 1);
+}
+
+.second{
+        margin-right:10%;
+        margin-top:50px;
+        font-size:150%;
+}
+
+.formation{
+    display:none;
+}
+
+footer {
+    text-align:center;
+    background: rgba(255, 255, 255, 0.28);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(9.8px);
+    -webkit-backdrop-filter: blur(9.8px);
+    padding:20px 50px 20px 20px;
+}
+
+.liens {
+    display:flex;
+    flex-direction:row;
+    justify-content: center;
+    color:black;
+    font-size:105%;
+}
+
+.svg {
+    height: 40px;    
+}
+
+.lien {
+    margin-right:20px;
+    margin-left:20px;
+}
+
+.lien a {
+    color:black;
+    text-decoration:none;
+    display:flex;
+    flex-direction:column;
+}

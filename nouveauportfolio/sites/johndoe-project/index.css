@@ -1,0 +1,442 @@
+* {
+    margin:0;
+    padding:0;
+}
+
+body {
+    background-color:black;
+    color:white;
+}
+
+/* navbar */
+header {
+    display:flex;
+    flex-direction:column;
+    width: 60px;
+    background-color:grey;
+    padding-bottom:40px;
+    padding-right:40px;
+    position:fixed;
+}
+
+header img.avatar {
+    height: 100px;
+    width: 100px;
+}
+
+header img {
+    width: 60px;
+}
+
+.navbar {
+    padding-left:15px;
+    margin-top:10px;
+}
+
+.navbar a {
+    color:white;
+    text-decoration:none;
+}
+
+/* main */
+main {
+    margin-left:20%;
+    margin-right:20%;
+    align-items:center;
+    width: 50%;
+    margin-top:75px;
+}
+
+/* nom , métier et image */
+.nomimage {
+    text-align:center;
+    margin-top:20px;
+}
+
+.nomimage h1 {
+    font-size:200%;
+    margin-bottom:20px;
+}
+
+.nomimage p {
+    margin-bottom:20px;
+    color:rgb(176, 176, 176);
+}
+
+.nomimage img {
+    height: 500px;
+}
+
+/* description */
+.name {
+    margin-top:150px;
+}
+
+.name p {
+    margin-top:50px;
+    color:rgb(176, 176, 176)
+}
+
+/* compétences */
+.skills {
+    margin-top:50px;
+}
+
+/* dernière compétence */
+.articlelast {
+    margin-bottom:30px;
+}
+
+/* chaque compétences */
+.article {
+    color:rgb(176, 176, 176);
+}
+
+/* les barres de compétence */
+.all {
+    width: 100%;
+    height: 30px;
+    margin-top:10px;
+    margin-bottom:10px;
+    background-color:white;
+}
+
+/* chaque barres de compétences */
+.full {
+    height: 30px;
+    background-color:rgb(111, 110, 110);
+}
+
+/* barre de compétence photography */
+.photography {
+    animation-name: photography;
+    animation-duration:3s ;
+    animation-fill-mode: forwards;
+}
+
+/* l'animation de la barre de compétence photography */
+@keyframes photography {
+    from {
+        width: 0%;
+    } to {
+        width: 90%;
+    }
+}
+
+/* barre de compétence webdesign */
+.webdesign {
+    animation-name:webdesign;
+    animation-duration:4s;
+    animation-fill-mode:forwards;
+}
+
+/* l'animation de la barre de compétence webdesign */
+@keyframes webdesign {
+    from {
+        width: 0%;
+    } to {
+        width: 80%;
+    }
+}
+
+/* barre de compétence photoshop */
+.photoshop {
+    animation-name:photoshop;
+    animation-duration:4s;
+    animation-fill-mode:forwards;
+}
+
+/* l'animation de la barre de compétence photoshop */
+@keyframes photoshop {
+    from {
+        width: 0%;
+    } to {
+        width: 65%;
+    }
+}
+
+/* ses projets */
+
+.number {
+    background-color:white;
+    color:black;
+    display:flex;
+    flex-direction:row;
+    justify-content:space-around;
+    padding-bottom:20px;
+    padding-top:20px;
+    text-align:center;
+}
+
+.insidenumber {
+    font-weight: bold;
+    margin-bottom:20px;
+    margin-top:20px;
+}
+
+/* le bouton pour télécharger son projet */
+.cv {
+    margin-left:50%;
+    transform:translateX(-50%);
+    width: 50%;
+    margin-top:13px;
+    padding-top:10px;
+    font-size:120%;
+    display:flex;
+    flex-direction:row;
+    justify-content:center;
+}
+
+button img {
+    height: 25px;
+    margin-right:10px;
+}
+/* ses prix */
+.price {
+    margin-top:50px;
+}
+
+.price h2 {
+    margin-bottom:20px;
+}
+
+.basicpro {
+    display:flex;
+    flex-direction:row;
+    justify-content:space-evenly;
+}
+
+.insidebasicpro {
+    background-color:white;
+    color:black;
+    width: 40%;
+    text-align:center;
+    margin-bottom:50px;
+    background-color:#909090;
+}
+
+.insidebasicpro h3 {
+    background-color:#3A3A3A;
+    color:white;
+    padding:10px;
+    padding-left:10px;
+}
+
+.insidebasicpro p {
+    padding-left:10px;
+    padding-top:10px;
+    margin-bottom:10px;
+    padding-bottom:10px;
+    border-bottom:solid grey 1px;
+}
+
+.insidebasicpro .sign {
+    width: 30%;
+    font-size:95%;
+    padding-bottom:5px;
+    border:solid whitesmoke;
+    margin-bottom:10px;
+}
+
+/* reputation */
+/* chaque commentaire */
+.commentaire {
+    display:flex;
+    flex-direction:row;
+    color:rgb(176, 176, 176);
+}
+
+/* nom + commentaire */
+.comm {
+    display:flex;
+    flex-direction:column;
+    margin-left:30px;
+    margin-top:20px;
+    margin-bottom:20px;
+}
+
+.commentaire img {
+    border-radius:50%;
+    height: 100px;
+    margin-bottom:40px;
+}
+
+.reputation h2 {
+    margin-bottom:40px;
+}
+
+/* toute les photos */
+.thephotos {
+    display:flex;
+    flex-direction:row;
+    flex-wrap:nowrap;
+    cursor:pointer;
+}
+
+/* chaque photos */
+.insidephotos {
+    display:flex;
+    flex-direction:column;
+}
+
+.thephotos img {
+    width:500px;
+    height: 100%;
+    margin:5px;
+}
+
+/* le bouton pour fermer les grandes images */
+.bigimage button {
+    position:absolute;
+    margin-left: 8px;
+    width:30px;
+    padding-bottom:5px;
+    cursor:pointer;
+}
+
+/* les grandes images caché de base */
+.big {
+    visibility: hidden;
+}
+
+/* chaque grande image */
+.wedding {
+    position:fixed;
+    height: 100%;
+    width: 100%;
+    top:0px;
+    padding-top:200px;
+    padding-left:25%;
+    backdrop-filter: blur(10px);
+    visibility:hidden;
+    cursor:pointer;
+}
+
+.bigrock {
+    position:fixed;
+    height: 100%;
+    width: 100%;
+    top:0px;
+    padding-top:50px;
+    padding-left:35%;
+    backdrop-filter: blur(10px);
+    visibility:hidden;
+    cursor:pointer;
+}
+
+.bigsail {
+    position:fixed;
+    height: 100%;
+    width: 100%;
+    top:0px;
+    padding-top:50px;
+    padding-left:18%;
+    backdrop-filter: blur(10px);
+    visibility:hidden;
+    cursor:pointer;
+}
+
+.bigsail img {
+    height: 80%;
+    width: 1100px;
+}
+
+.bigunderwater {
+    position:fixed;
+    height: 100%;
+    width: 100%;
+    top:0px;
+    padding-top:100px;
+    padding-left:25%;
+    backdrop-filter: blur(10px);
+    visibility:hidden;
+    cursor:pointer;
+}
+
+.biglastimage {
+    position:fixed;
+    height: 100%;
+    width: 100%;
+    top:0px;
+    padding-top:200px;
+    padding-left:30%;
+    backdrop-filter: blur(10px);
+    visibility:hidden;
+    cursor:pointer;
+}
+
+.biglastimage img {
+    width: 600px;
+}
+
+/* contact */
+.contact {
+    margin-top:50px;
+}
+
+.contact h2 {
+    margin-bottom:20px;
+}
+
+.contact img {
+    width: 40px;
+}
+
+/* chaque images + description du contact */
+.pin {
+    display:flex;
+    flex-direction:row;
+    margin-left:10px;
+    margin-bottom:10px;
+    margin-top:10px;
+}
+
+.pin p {
+    margin-top:10px;
+    margin-left:10px;
+}
+
+/* pour envoyer un mail */
+form {
+    display:flex;
+    flex-direction:column;
+    margin-left:20%;
+}
+
+form p {
+    margin-bottom:10px;
+}
+
+input {
+    width: 70%;
+    margin-bottom:5px;
+    margin-top:5px;
+    height: 30px;
+    padding-left:5px;
+}
+
+form button {
+    width: 30%;
+    font-size:90%;
+    height: 30px;
+    padding-bottom:20px;
+}
+
+form img {
+    height: 20px;
+}
+
+/* les reseaux */
+footer {
+    margin-left:20%;
+    padding-top:50px;
+    margin-bottom:10px;
+}
+
+.footerimg {
+    margin-bottom:20px;
+}
+
+footer img {
+    width: 50px;
+}

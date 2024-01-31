@@ -1,0 +1,116 @@
+*{
+    margin:0;
+    padding:0;
+}
+
+body {
+    background-color:white;
+}
+
+.labyrinthe {
+    background-color:grey;
+    width: 500px;
+    height: 500px;
+    margin-left:35%;
+    margin-top:10%;
+    transform: skew(-33deg, 19deg);
+    -webkit-box-shadow: 16px 20px 6px 10px #000000; 
+box-shadow: 16px 20px 6px 10px #000000;
+}
+
+.chemin1 {
+    margin-top:20%;
+    width: 50%;
+    height: 80%;
+    background-color:black;
+    position:absolute;
+}
+
+.chemin2{
+    width: 100%;
+    height: 10%;
+    background-color:black;
+    position: absolute;
+}
+
+.chemin3 {
+    width: 40%;
+    height: 80%;
+    /* margin-top:20%; */
+    margin-left:60%;
+    background-color:black;
+    position: absolute;
+}
+
+.chemin4{
+    width:60%;
+    height: 10%;
+    margin-top:90%;
+    margin-left:40%;
+    background-color:black;
+    position:absolute;
+}
+
+.chemin5{
+    width: 10%;
+    height: 30%;
+    margin-top:70%;
+    margin-left:90%;
+    background-color:black;
+    position: absolute;
+}
+
+.chemin6{
+    position: absolute;
+}
+
+.chemin7{
+    position: absolute;
+    background-color:black;
+}
+
+.chemin8{
+    position: absolute;
+    background:black;
+}
+
+.chemin9{
+    position: absolute;
+    background-color: black;
+}
+
+.vert{
+    width: 10%;
+    height: 10%;
+    margin-top:80%;
+    margin-left:80%;
+    background-color:green;
+    position: absolute;
+}
+
+#debut{
+    text-align:center;
+    margin-top:50px;
+    font-size:120%;
+}
+
+#debut h1{
+    border-bottom:solid rgb(106, 162, 23) 1px;
+    width: fit-content;
+    margin-left:50%;
+    transform:translateX(-50%);
+}
+
+#debut button{
+    margin-top:20px;
+    font-size:150%;
+    padding:10px;
+    border-radius:10px;
+    border:none;
+    background-color:rgb(106, 162, 23);
+}
+
+#debut button:hover{
+    cursor:pointer;
+    background-color: rgb(77, 116, 18);
+}

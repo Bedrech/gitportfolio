@@ -1,0 +1,157 @@
+/* quand l'écran passe a 1600px */
+@media screen and (max-width:1600px) {
+    .carousel {
+        width: 70%;
+    }
+}
+
+/* quand l'écran passe a 1500px */
+@media screen and (max-width:1500px) {
+    .contact {
+        margin-top:200px;
+    }
+}
+
+/* quand l'écran passe a 1100px */
+@media screen and (max-width:1100px) {
+    .carousel {
+        width: 90%;
+    }
+}
+
+/* quand l'écran passe a 1000px */
+@media screen and (max-width:1000px) {
+    .navbar {
+        font-size:80%;
+    }
+}
+
+/* quand l'écran  passe a 900px */
+@media screen and (max-width:900px) {
+    .carousel {
+        width: 80%;
+    }
+    .allprojects img {
+        height: 300px;
+    }
+    .contact {
+        margin-top:300px;
+    }
+}
+
+/* quand l'écran passe a 850px */
+@media screen and (max-width:850px){
+    .navbar a {
+        font-size:100%;
+    }
+    .allprojects img {
+        max-width:400px;
+    }
+    .allprojects img  {
+        max-height: 300px;
+    }
+}
+
+/* quand l'écran passe a 800 */
+@media screen and (max-width:800px) {
+    .contact {
+        margin-top:400px;
+    }
+}
+
+/* quand l'écran passe a 750 */
+@media screen and (max-width:750px) {
+    .contact {
+        margin-top:500px;
+    }
+}
+
+/* quand l'écran passe a 600px */
+@media screen and (max-width:600px){
+    .carousel {
+        width: 95%;
+    }
+    .navbar a {
+        font-size:100%;
+        padding-left:5px;
+        padding-right:5px;
+        margin-right:0;
+    }
+    .parcours {
+        font-size:85%;
+    }
+    .contact button{
+        margin-left:20%;
+        margin-right:20%;
+    }
+    .contact{
+        margin-top:300px;
+    }
+}
+
+/* quand l'écran passe a 500px */
+@media screen and (max-width:500px){
+    .allprojects img {
+        max-width: 250px;
+        height: 150px;
+    }
+    .carousel {
+        width: 90%;
+    }
+    .carousel_arrows{
+        margin-bottom:420px;
+    }
+    .contact button{
+        margin-left:15%;
+        margin-right:15%;
+        font-size:100%;
+    }
+    .parcours{
+        font-size:80%;
+    }
+    .contact {
+        margin-top:200px;
+    }
+    .right {
+        display:none;
+    }
+    .formation{
+        display:block;
+    }
+    .left{
+        width: 70%;
+    }
+    .first{
+        width: 70%;
+    }
+    .second{
+        display:none;
+    }
+}
+
+/* quand l'écran passe a 400px */
+@media screen and (max-width:400px) {
+    .navbar  {
+        width: 200px;
+        text-align:center;
+    }
+}
+
+/* quand l'écran passe a 370px */
+@media screen and (max-width:370px){
+    .contact{
+        margin-top:300px;
+    }
+}
+
+/* quand l'écran passe a 320px */
+@media screen and (max-width:320px){
+    .allprojects img {
+        max-width: 200px;
+    }
+    .contact button{
+        margin-left:10%;
+        margin-right:10%;
+        font-size:100%;
+    }
+}

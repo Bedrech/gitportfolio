@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Accueil</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <div class="body">
+        <header>
+            <nav class="navbar">
+                <div class="flex-container">
+                    <div class="flex-items"><img id="more" class="navbarmore" src="more.png">
+                        <ul id="ule" class="">
+                            <li onclick="MenuLoad()">Menu</li>
+                            <li onclick="ContactLoad()">Contact</li>
+                        </ul>
+                    </div>
+                    <div style="font-size:150%;" class="flex-items"><b>My Food</b></div>
+                    <div style="font-size:150%;" class="flex-items"><b>Mail</b></div>
+                </div>
+                <h1><b>LOGO</b></h1>
+                <div class="navbarbottom">
+                    <h2>monday - friday 10-23 | saturday 14-02</h2>
+                    <p>42 village St. New York</p>
+                    <p>powered by w3.css</p>
+                </div>
+            </nav>
+    </header>
+        <div class="contactt">
+            <div id="contact" class="contact"></div>
+        </div>
+        <div class="menuu">
+            <div id="menu" class="menu"></div>
+        </div>
+        <div id="confirmation">
+            <p id="xclose" class="x">x</p>
+            <h2 id="confirmationp"><u>Veuillez confirmez s'il vous plaît</u></h2>
+            <p id="votrenom"></p>
+            <p id="votrenombre"></p>
+            <p id="votredate"></p>
+            <p id="votremessage"></p>
+            <button id="confirmdata">Confirmer</button>
+            <h4 id="thanks"></h4>
+        </div>
+        <div id="images" class="images">
+            <!--<div class="premier">
+                <img src="myfood//images/sandwich.jpg">
+                <h3>The Perfect Sandwich, A Real NYC Classic</h3>
+                <p>Just some random text, lorem ipsum text praesent tincidunt insum linsum</p>
+            </div>
+            <div class="premier">
+                <img src="myfood//images/steak.jpg">
+                <h3>Let Me Tell You About This Steak</h3>
+                <p>Once again, some random text to lorem l orem lorem lorem ipsum text praesent tincidunt ipsum lipsum</p>
+            </div>
+            <div class="premier">
+                <img src="myfood//images/cherries.jpg">
+                <h3>Cherries, interrupted</h3>
+                <p>Lorem ipsum text praesent tincidunt ipsum lipsum.<br>What else?</p>
+            </div>
+            <div class="premier">
+            <img src="myfood//images/wine.jpg">
+                <h3>Once Again, Robust Wine and Vegetable Pasta</h3>
+                <p>Lorem ipsum text praesent tincidunt ipsum lipsum</p>
+            </div>
+            <div class="premier">
+                <img src="myfood//images/popsicle.jpg">
+                <h3>All I Need is a Popsicle</h3>
+                <p>Lorem ipsum text praesent tincidunt ipsum lipsum</p>
+            </div>
+            <div class="premier">
+                <img src="myfood//images/salmon.jpg">
+                <h3>Salmon For Your Skin</h3>
+                <p>Once again, some random text to lorem lorem lorem lorem ipsum text praesent tincidunt ipsum lipsum</p>
+            </div>
+            <div class="premier">
+                <img src="myfood//images/sandwich.jpg">
+                <h3>The Perfect Sandwich, A Real Classic</h3>
+                <p>Just some random text, lorem ipsum text praesent tincidunt ipsum lipsum</p>
+            </div>
+            <div class="premier">
+                <img src="myfood//images/croissant.jpg">
+                <h3>Le French</h3>
+                <p>Lorem lorem lorem lorem ipsum text praesent tincidunt ipsum lipsum</p>
+            </div>-->        
+        </div>
+        <div class="aboutme">
+            <h1>About Me, The Food Man</h1>
+            <img style="margin-bottom:35px;" src="myfood/images/chef.jpg">
+            <h2><b>I am Who I Am !</b></h2>
+            <p><i>With Passion For Real, Good Food</i></p>
+            <p>Just me, myself and I, exploring the universe of unknownment.
+                I have a heart of love and an interest of lorem ipsum and mauris neque quam blog.
+                I want to share my world with you. Praesent tincidunt sed tellus ut rutrum. Sed vitae justo condimentum,
+                porta lectus vitae, ultricies congue gravida diam non fringilla.
+                Praesent tincidunt sed tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae,
+                ultricies congue gravida diam non fringilla.
+            </p>
+        </div>
+    </div>
+    <footer>
+        <div class="footerdiv">
+            <h2>FOOTER</h2>
+            <p>Prasent tincidunt sed tellus ut rutrum. Sed vitae justo condimentum porta lectus vitae, ultricies congue gravida diam non fringilla .</p>
+            <p>Powered by w3.css</p>
+        </div>
+        <div class="footerdiv">
+            <h2>BLOG POSTS</h2>
+            <div class="insidefooterdiv">
+                <div>
+                    <img src="myfood/images/workshop.jpg">
+                </div>
+                <div class="insidefooterdivtext">
+                    <h4>Lorem</h4>
+                    <p>Sed mattis nunc</p>
+                </div>
+                </div class="insidefooterdiv">
+            <div class="insidefooterdiv">
+                <div>
+                    <img src="myfood/images/gondol.jpg">
+                </div>
+                <div class="insidefooterdivtext">
+                    <h4>Ipsum</h4>
+                    <p>Praes tinci sed</p>
+                </div>
+            </div>
+        </div>
+        <div id="footerdiv" class="footerdiv">
+            <h4>POPULAR TAGS</h4>
+            <!--button>Travel</button>
+            <button>New York</button>
+            <button>Dinner</button>
+            <button>Salmon</button>
+            <button>France</button>
+            <button>Drinks</button>
+            <button>Ideas</button>
+            <button>Flavors</button>
+            <button>Cuisine</button>
+            <button>Chickens</button>
+            <button>Dressing</button>
+            <button>Fried</button>
+            <button>Fish</button>
+            <button>Duck</button>-->
+        </div>
+    </footer>
+    <script type="text/javascript" src="index.js"></script>
+</body>
+</html>

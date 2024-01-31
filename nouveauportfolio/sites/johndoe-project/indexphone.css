@@ -1,0 +1,172 @@
+@media screen and (max-width:700px) {
+    header {
+        display:flex;
+        flex-direction:row;
+        justify-content: center;
+        width: 100%;
+        background-color:grey;
+        padding-bottom:0px;
+        padding-right:0px;
+        position:fixed;
+        top:0px;
+        font-size:70%;
+    }
+    
+    header img {
+        width: 60px;
+        display:none;
+    }
+    
+    .navbar {
+        padding-top:20px;
+        padding-bottom:20px;
+        display:flex;
+        flex-direction:row;
+    }
+    .insidenav {
+        padding-left:50px;
+        padding-right:50px;
+    }
+
+    .number {
+        background-color:white;
+        color:black;
+        display:flex;
+        flex-direction:column;
+        justify-content:space-around;
+        padding-bottom:20px;
+        padding-top:20px;
+        text-align:center;
+    }
+
+    .insidenumber {
+        margin-bottom:10px;
+        margin-top:10px;
+        font-weight: bold;
+    }
+
+    .basicpro {
+        display:flex;
+        flex-direction:column;
+        width: 50%;
+        font-size:120%;
+        justify-content:space-evenly;
+    }
+
+    .insidebasicpro {
+        width: 200%;
+    }
+
+    button {
+        width: 90%;
+        margin-left:5%;
+        margin-top:13px;
+        padding-top:10px;
+        font-size:120%;
+        display:flex;
+        flex-direction:row;
+        justify-content:center;
+        
+    }
+    
+    button img {
+        height: 25px;
+        margin-right:10px;
+    }
+
+    .insidebasicpro button {
+        width: 50%;
+        margin-left:25%;
+        font-size:95%;
+        padding-bottom:5px;
+        border:solid whitesmoke;
+        margin-bottom:10px;
+    }
+
+    .thephotos img {
+        width:200px;
+        height: 100%;
+        margin:5px;
+    }
+    
+    .wedding {
+        position:fixed;
+        height: 100%;
+        width: 100%;
+        top:0px;
+        padding-top:200px;
+        padding-left:15%;
+        backdrop-filter: blur(10px);
+        visibility:hidden;
+        cursor:pointer;
+    }
+
+    .wedding img {
+        width: 500px;
+    }
+    
+    .bigrock {
+        position:fixed;
+        height: 100%;
+        width: 100%;
+        top:0px;
+        padding-top:50px;
+        padding-left:20%;
+        backdrop-filter: blur(10px);
+        visibility:hidden;
+        cursor:pointer;
+    }
+
+    .bigrock img {
+        height:700px ;
+    }
+    
+    .bigsail {
+        position:fixed;
+        height: 100%;
+        width: 100%;
+        top:0px;
+        padding-top:200px;
+        padding-left:18%;
+        backdrop-filter: blur(10px);
+        visibility:hidden;
+        cursor:pointer;
+    }
+    
+    .bigsail img {
+        height: 50%;
+        width: 500px;
+    }
+    
+    .bigunderwater {
+        position:fixed;
+        height: 100%;
+        width: 100%;
+        top:0px;
+        padding-top:100px;
+        padding-left:15%;
+        backdrop-filter: blur(10px);
+        visibility:hidden;
+        cursor:pointer;
+    }
+
+    .bigunderwater img {
+        width: 500px;
+    }
+    
+    .biglastimage {
+        position:fixed;
+        height: 100%;
+        width: 100%;
+        top:0px;
+        padding-top:200px;
+        padding-left:20%;
+        backdrop-filter: blur(10px);
+        visibility:hidden;
+        cursor:pointer;
+    }
+    
+    .biglastimage img {
+        width: 400px;
+    }
+}

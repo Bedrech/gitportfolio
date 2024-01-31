@@ -1,0 +1,436 @@
+@media screen and (max-width:1150px) {
+    .navbar {
+        width:10%;
+    }
+}
+
+@media screen and (max-width:700px) {
+    body {
+        margin:0;
+        padding:0;
+        
+    }
+    
+    main {
+        display:flex;
+        flex-direction:column;
+    }
+    
+    .body {
+        margin-left:0%;
+        margin-right:0%;
+    }
+    
+    .navbar {
+        display:none;
+    }
+
+    .navbartel {
+        display:block;
+        background-color:black;
+        color:white;
+    }
+
+    .tel {
+        display:flex;
+        flex-direction:row;
+        justify-content:space-between;
+        padding-left:20px;
+        padding-right:20px;
+    }
+
+    .mydashboard {
+        display:flex;
+        flex-direction:column;
+        margin-top:20px;
+        width:90%;
+    }
+    
+    .mydashboard h2 {
+        margin-left:20px;
+    }
+    
+    .stats {
+        display:flex;
+        flex-direction:column;
+    }
+    
+    .stats img {
+        height: 80px;
+        
+    }
+    .stats div.inside {
+        padding:20px;
+        margin-left:0px;
+        margin-right:0px;
+        display:flex;
+        flex-direction:row;
+        justify-content:space-between;
+        width: 100%;
+        color:white;
+        font-size:120%;
+    }
+    
+    .message p {
+        display:block;
+    }
+    
+    .views p {
+        display:block;
+    }
+    
+    .shares p {
+        display:block;
+    }
+    
+    .users p {
+        display:block;
+    }
+        
+    .insidestats {
+        display:flex;
+        flex-direction:column;
+        height: 130px;
+    }
+    
+    .message {
+        background-color:rgb(238, 57, 57);
+    }
+    
+    .views {
+        background-color:rgb(121, 160, 238);
+    }
+    
+    .shares {
+        background-color:rgb(47, 197, 107)
+    }
+    
+    .users {
+        background-color:orange;
+    }
+    
+    .generalstats {
+        padding-top:20px;
+    }
+    
+    .generalstats h2 {
+        margin-left:20px;
+    }
+    
+    .general {
+        margin-left:20px;
+    }
+    
+    .general p {
+        text-align:center;
+        padding-top:15px;
+        color:white;
+    }
+    
+    .rate {
+        background-color:grey;
+        width:100%;
+        height: 50px;
+    }
+    
+    .visitorsrate {
+        animation-name:visitors;
+        animation-duration:2s;
+        animation-fill-mode:forwards;
+    }
+    
+    @keyframes visitors {
+        from {
+            background-color:green;
+            height: 50px;
+            width: 0%;
+        }
+        to {
+            background-color:green;
+            height:50px;
+            width:25%;
+        }
+    }
+    
+    .usersrate {
+        animation-name:users;
+        animation-duration:3s;
+        animation-fill-mode:forwards;
+    }
+    
+    @keyframes users {
+        from {
+            background-color:orange;
+            height: 50px;
+            width: 0%;
+        }
+        to {
+            background-color:orange;
+            height:50px;
+            width:50%;
+        }
+    }
+    
+    .bouncerate {
+        animation-name:bounce;
+        animation-duration:4s;
+        animation-fill-mode:forwards;
+    }
+    
+    @keyframes bounce {
+        from {
+            background-color:red;
+            height: 50px;
+            width: 0%;
+        }
+        to {
+            background-color:red;
+            height:50px;
+            width:75%;
+        }
+    }
+    
+    @keyframes visitorsname {
+        from {
+            opacity:0;
+        }
+        to {
+            opacity:1;
+        }
+    }
+    
+    .percentage {
+        animation-name:visitorsname;
+        animation-duration:5s;
+        animation-fill-mode:forwards;
+    }
+    
+    .usersrate {
+        background-color:orange;
+        width: 50%;
+        height: 50px;
+    }
+    
+    .bouncerate {
+        background-color:rgb(238, 57, 57);
+        width: 75%;
+        height: 50px;
+    }
+    
+    .troisieme {
+        display:flex;
+        flex-direction:column;
+        margin-left:20px;
+        padding-top:20px;
+    }
+    
+    .region img {
+        width: 100%;
+    }
+    
+    .feeds {
+        display:flex;
+        flex-direction:column;
+        padding-left:40px;
+    }
+    
+    .feeds img {
+        height: 40px;
+    }
+    
+    .insidefeeds {
+        display:flex;
+        flex-direction:row;
+        justify-content:space-between;
+    }
+    
+    .insidefeeds img {
+        height: 40px;
+        padding-right:0px;
+    }
+    
+    .insidefeeds p {
+        margin-left:0px;
+        margin-right:0px;
+    }
+    
+    .countries {
+        margin-left:20px;
+    }
+    
+    table {
+        border:solid grey 1px;
+        width: 100%;
+        margin-bottom:20px;
+    }
+    
+    
+    td {
+        border-bottom:solid grey 1px;
+        height: 35px;
+        display:flex;
+        flex-direction:row;
+        justify-content: space-between;
+        padding-left:30px;
+        padding-right:30px;
+    }
+    
+    td:hover {
+        background-color:grey;
+    }
+    
+    td.last {
+        border-bottom:none;
+    }
+    
+    .countries button {
+        width: 85%;
+        height: 50px;
+        margin-left:50px;
+        background-color:grey;
+        font-size:120%;
+        color:white;
+        border:none;
+        padding-bottom:5px;
+        padding-top:5px;
+    }
+    
+    .countries button:hover {
+        background-color:rgb(82, 82, 82);
+    }
+    
+    .coutries button:hover .image {
+        margin-left:20px;
+    }
+    
+    img.image {
+        height: 20px;
+    }
+    
+    .recentusers {
+        margin-left:20px;
+        margin-top:50px;
+    }
+    
+    .names {
+        padding-left:50px;
+        box-shadow: 0px 0px 26px 3px rgba(0,0,0,0.79);
+    }
+    
+    .names img {
+        height: 50px;
+        border-radius:100%;
+        margin-right:20px;
+    }
+    
+    .namestop {
+        padding-top:20px;
+    }
+    
+    .namesbottom {
+        padding-bottom:20px;
+    }
+    
+    .insidenames {
+        display:flex;
+        flex-direction:row;
+        padding-top:10px;
+        padding-top:10px;
+    }
+    
+    .commentsection {
+        margin-left:20px;
+        margin-top:50px;
+    }
+    
+    .comment {
+        display:flex;
+        flex-direction:column;
+    }
+    
+    .comments {
+        display:flex;
+        flex-direction:column;
+        margin-bottom:30px;
+    }
+    
+    .nomdate {
+        display:flex;
+        flex-direction:row;
+    }
+    
+    .nomdate h3 {
+        margin-right:20px;
+        font-size:140%;
+    }
+    
+    .nomdate p  {
+        font-size:90%;
+    }
+    
+    .texte {
+        display:flex;
+        flex-direction:column;
+    }
+    
+    .demosystar {
+        background-color:rgb(71, 70, 70);
+        color:white;
+        margin-left:20px;
+    }
+    
+    .triple {
+        padding-left:20px;
+        padding-top:20px;
+        display:flex;
+        flex-direction:column;
+        justify-content: space-around;
+    }
+    
+    .triple h3 {
+        font-size:130%;
+    }
+    
+    .triple p {
+        font-size:110%;
+    }
+    
+    .demographic {
+        width:85%;
+    }
+    
+    .red {
+        background-color:red;
+        height: 5px;
+        width: 100%;
+    }
+    
+    .system {
+        width: 85%;
+    }
+    
+    .green {
+        background-color:green;
+        height: 5px;
+        width: 100%;
+    }
+    
+    .target {
+        width: 85%;
+    }
+    
+    .orange {
+        background-color:orange;
+        height: 5px;
+        width: 100%;
+    }
+    
+    footer {
+        margin-left:20px;
+        font-size:120%;
+    }
+    
+    footer a {
+        color:black;
+    }
+}
