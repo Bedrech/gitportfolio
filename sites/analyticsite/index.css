@@ -12,6 +12,7 @@ main {
 .body {
     margin-left:249px;
     margin-right:249px;
+    width: 80%;
 }
 /*Navbar téléphone*/
 .navbartel {
@@ -93,6 +94,7 @@ main {
 
 .mydashboard h2 {
     margin-left:20px;
+    margin-bottom:10px;
 }
 
 .stats {
@@ -155,19 +157,19 @@ main {
 }
 
 .message {
-    background-color:rgb(238, 57, 57);
+    background-color:rgb(255, 22, 22);
 }
 
 .views {
-    background-color:rgb(121, 160, 238);
+    background-color:rgb(67, 127, 248);
 }
 
 .shares {
-    background-color:rgb(47, 197, 107)
+    background-color:rgb(40, 255, 126)
 }
 
 .users {
-    background-color:orange;
+    background-color:rgb(255, 232, 30);
 }
 /*Les statistiques générales*/
 .generalstats {
@@ -177,6 +179,7 @@ main {
 
 .generalstats h2 {
     margin-left:20px;
+    margin-bottom:10px;
 }
 
 .general {
@@ -287,7 +290,7 @@ main {
 }
 
 .region img {
-    width: 500px;
+    width: 50vh;
 }
 /*feed*/
 .feeds {
@@ -371,6 +374,10 @@ img.image {
 .recentusers {
     margin-left:20px;
     margin-top:50px;
+}
+
+.recentusers h2{
+    margin-bottom:10px;
 }
 
 .names {
